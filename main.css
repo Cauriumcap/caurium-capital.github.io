@@ -1,0 +1,44 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.navbar ul {
+	margin: 0;
+	padding-top: 20px;
+}
+.navbar li {
+	list-style: none;
+	font-size: 14px;
+}
+
+.background-image { 
+  background-image: url('las_calzadas_romanas_bw.jpg');
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#title-block {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /*min-height: 100vh;*/
+}
+
+#description-block {
+	align-content: center;
+	margin: 0% 20% 0% 20%;
+}
+
+#description-block a {
+	text-decoration: none;
+	color: white;
+}
