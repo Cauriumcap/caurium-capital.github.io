@@ -3,15 +3,33 @@
 <head>
 	<title>Caurium Capital</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#description').on('click', function() {
+				$('#description-block').removeClass('hidden');
+			});
+		});
+	</script>
+	<style type="text/css">
+		.navbar-item {
+			text-decoration: none;
+			color: white;
+		}
+
+		.hidden {
+			visibility: hidden;
+		}
+	</style>
 </head>
 <body class="background-image">
 	<nav class="navbar">
 		<ul>
-			<li><a>The Firm</a></li>
+			<li><a id="description" class="navbar-item" href="javascript:;" onclick="function(e) { e.preventDefault() }">The Firm</a></li>
 		</ul>
 	</nav>
 	<div id="title-block"><img src="caurium-capital-logo.png" alt="Caurium Capital"></div>
-	<div id="description-block">
+	<div id="description-block" class="hidden">
 		<p>The world is complex, but running your business doesn't have to be. Caurium Capital can help you navigate the most difficult financial issues and devise custom solutions to your business needs. We deliver expert advice to help you make critical strategic and alternative investment decisions with confidence.</p>
 		<p>Caurium Capital provides comprehensive independent advisory services for your most pressing financial issues, including:</p>
 		<ul>
